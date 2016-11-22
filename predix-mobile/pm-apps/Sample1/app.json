@@ -1,0 +1,8 @@
+{
+  "name": "fso",
+  "version": "1.0",
+  "starter": "fieldServiceOperations",
+  "dependencies": {
+    "fieldServiceOperations": "0.0.1"
+  }
+}
