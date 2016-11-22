@@ -1,0 +1,7 @@
+<div class="row center-xs">
+    <ul class="breadcrumb">
+        <li ng-repeat="stage in stages track by $index" ng-click="goToNextStage($index)" ng-class="getStatus(stage)">
+            <a>{{stage.title}}</a>
+        </li>
+    </ul>
+</div>

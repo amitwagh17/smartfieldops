@@ -1,0 +1,8 @@
+<div class="list-card list-card--incident" ng-repeat="incident in incidentList track by $index" ng-click="goToIncidentDetails(incident)">
+    <header class="list-card__header">
+        <h4 class="list-card__header-title"> {{incident.title}}</h4>
+    </header>
+    <div>
+        <p>Type: {{incident.type}}</p>
+    </div>
+</div>
