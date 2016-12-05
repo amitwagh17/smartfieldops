@@ -4,7 +4,7 @@ angular.module('incidentMgmt').directive('incidentList', function ($state,api) {
         replace: true,
         templateUrl: 'src/incident/components/incident-list/incident-list.template.html',
         link:function(scope){
-            var incidentUrl = 'https://cg-incident-service-1.run.aws-usw02-pr.ice.predix.io/service/incident/list';
+            var incidentUrl = 'https://dt-incident-microservice-hack.run.aws-usw02-pr.ice.predix.io/service/incident/list';
             var param = {
                 ssoId: 502437175
             };

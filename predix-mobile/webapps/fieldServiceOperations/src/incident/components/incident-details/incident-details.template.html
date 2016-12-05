@@ -11,21 +11,19 @@
             </div>
             <div class="row">
                 <div class="col-xs-6" style="padding-left:30px;">
-                    <p>
+                    <p ng-if="location">
                         <span class="label"> Latitue :</span>
-                        <spa class="val" n>42.3517272</span>
-                <span ng-if="!location">
+                        <span class="val" n>{{location.lat}}</span>
 
-                </span>
                     </p>
                 </div>
                 <div class="col-xs-6">
-                    <span class="label">Longitude : </span>
-                    <span class="val">-71.0408624</span>
-                <span ng-if="!location">
 
-                </span>
+                    <p ng-if="location">
+                        <span class="label">Longitude : </span>
+                        <span class="val">{{location.long}}</span>
                     </p>
+
                 </div>
             </div>
 
@@ -70,7 +68,7 @@
                     <p class="label">Select Observation</p>
 
                     <div class="incident-checkbox" ng-repeat="item in incident.checkList track by $index">
-                        <label  class="val">
+                        <label class="val">
                             <input type="checkbox" ng-model="check"
                                    ng-change="checkAll(check,item)">
                             {{item.option}}

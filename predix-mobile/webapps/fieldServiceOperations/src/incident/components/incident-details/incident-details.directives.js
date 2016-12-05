@@ -175,7 +175,7 @@ angular.module('incidentMgmt').directive('incidentDetails', function ($state,api
             };
 
             if (navigator.geolocation) {
-                var timeoutVal = 10 * 60 *60;
+                var timeoutVal = 1000000;
                 navigator.geolocation.getCurrentPosition(
                     displayPosition,
                     displayError,
